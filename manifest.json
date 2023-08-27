@@ -1,0 +1,9 @@
+{
+    "name": "Cagr Calculator",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Calculate the compounded annual growth rate",
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

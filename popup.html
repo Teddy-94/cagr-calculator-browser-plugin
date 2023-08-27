@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cagr Calculator</title>
+    <script src="cagr.js"></script>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            background-color: #3498DB;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        label {
+            color: #ececf1;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ececf1;
+        }
+
+        input {
+            background-color: #34495E;
+            color: #ECF0F1;
+            border: 0;
+            border-bottom: 2px solid #2980B9;
+            text-align: center;
+            max-width: 55px;
+            margin-left: 8px;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body style="max-width: 200px; min-width: 150px; background-color: #2C3E50; margin: 20px;">
+    <h2>Cagr Calculator</h2>
+    <div class="row">
+        <label>Starting value</label>
+        <input type="number" id="start"></input>
+    </div>
+    <div class="row">
+        <label>End value</label>
+        <input type="number" id="end"></input>
+    </div>
+    <div class="row">
+        <label>Years</label>
+        <input type="number" id="years"></input>
+    </div>
+    <div style="text-align: center; margin-bottom: -10px;">
+        <button class="btn" id="calc" type="button">Calculate!</button>
+    </div>
+    <h2 id="cagr"> CAGR:     </h2>
+</body>
+
+</html>
